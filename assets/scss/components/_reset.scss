@@ -1,0 +1,21 @@
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: $ff-gotham;
+}
+button,input,textarea{
+    border: none;
+    outline: none;
+}

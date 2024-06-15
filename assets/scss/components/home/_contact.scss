@@ -1,0 +1,88 @@
+#contact {
+    padding: $fs-8 0 10.7rem 0;
+    background-color: $primary-color;
+    color: var(--bs-white);
+
+    .head {
+        span {
+            background-color: $primary-bg-color;
+        }
+    }
+
+    form {
+        margin-top: $fs-4;
+
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: nowrap;
+
+            input {
+                height: 40px;
+            }
+
+            textarea,
+            input {
+                width: 83%;
+                padding: 10px;
+            }
+
+        }
+
+        button {
+            background-color: $primary-bg-color;
+            padding: 5px 20px;
+            color: var(--bs-dark);
+            font-size: $fs-2;
+            @include flex;
+            gap: 5px;
+            float: right;
+        }
+    }
+
+    .contact-bg {
+        position: relative;
+
+        img {
+            position: absolute;
+            left: -16%;
+            bottom: -170px;
+        }
+    }
+}
+
+
+@media (min-width:300px) and (max-width:767px) {
+    #contact {
+        .contact-bg {
+            img {
+                width: 100%;
+                left: -25%;
+            }
+        }
+
+        form {
+            .input-group {
+                display: block !important;
+
+                input,
+                textarea {
+                    width: 100% !important;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    #contact {
+        padding: $fs-8;
+
+        .contact-bg {
+            display: none;
+        }
+
+    }
+}

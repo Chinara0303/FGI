@@ -1,0 +1,73 @@
+#services {
+    background: rgb(255, 255, 255);
+    padding: $fs-8;
+
+    .service-card {
+        background-color: var(--bs-white);
+        height: 348px;
+        box-shadow: $box-shadow;
+        padding: $fs-8 $fs-8;
+        margin-top: $fs-5;
+        position: relative;
+        color: var(--bs-dark);
+        transition: color .2s linear, background-color .3s linear;
+
+        .hover-wrapper {
+            background-color: $primary-bg-hover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 180px;
+            clip-path: circle(50% at 10% 5%);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s linear;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: $fs-11;
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            font-family: $ff-inter;
+        }
+
+        .learn-more {
+            opacity: 0;
+            visibility: hidden;
+
+            border-radius: $circle;
+            margin: 1rem 0;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            @include flex;
+            justify-content: center;
+            background: $primary-bg-hover;
+            position: absolute;
+            right: 12px;
+            bottom: 0;
+            transition: opacity .5s linear;
+
+            i {
+                color: var(--bs-white);
+            }
+        }
+
+        &:hover {
+            background-color: $primary-bg-color;
+            color: var(--bs-white);
+
+            .learn-more,
+            .hover-wrapper {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

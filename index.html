@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/scss/pages/home/home.css">
+    <title>FGI</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="overlay"></div>
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                    <div class="logo">
+                        <img src="./assets/imgs/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-8 col-6">
+                    <ul class="hamburger-menu-btn d-lg-none d-md-none d-block">
+                        <li><i class="fa-solid fa-bars fa-lg"></i></li>
+                    </ul>
+                    <ul class="d-lg-flex d-md-flex d-none">
+                        <li class="active-item"><a href="#">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#map">Map</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        <li class="language">
+                            <a href="#">Eng<i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                            <div class="languages">
+                                <a href="#">AZE</a>
+                                <a href="#">RU</a>
+                                <a href="#">ENG</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-lg-none d-md-none d-block menu">
+                        <div class="top-area">
+                            <div class="logo">
+                                <img src="./assets/imgs/logo.png" alt="">
+                            </div>
+                            <div class="close-btn">
+                                <i class="fa-regular fa-circle-xmark fa-xl"></i>
+                            </div>
+                        </div>
+                        <ul class="d-block">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#map">Map</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                            <li class="language">
+                                <a href="#">Eng</a>
+                                <i class="fa-solid fa-chevron-down fa-xs"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <a class="contact-btn" href="tel:1234567">
+            <p>Contact us</p>
+            <img src="./assets/imgs/whatsapp.svg" alt="">
+        </a>
+
+        <section id="slider" style="background-image: url('./assets/imgs/intro.png');">
+            <div class="overlay" style="background-image: url('./assets/imgs/shadow.png');">
+                <div class="container">
+                    <div class="info-wrapper">
+                        <h1>Welcome!</h1>
+                        <p>From implementing new business strategies to ultra-efficient work processes, FGI LLC is ready
+                            to
+                            tackle any challenge and put you on the path to success.
+                        </p>
+                        <a class="more-btn" href="#">More info<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="socials-wrapper">
+                        <ul class="social-links">
+                            <li><a href="#"><img src="./assets/imgs/instagram.svg" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/imgs/whatsapp.svg" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/imgs/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="./assets/imgs/envelope.svg" alt=""></a></li>
+                        </ul>
+                        <div class="bottom-btn">
+                            <img src="./assets/imgs/Group 1321314614.png" alt="">
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <svg width="150" height="150" viewBox="0 0 300 300" class="circle">
+                            <defs>
+                                <path id="circlePath"
+                                    d="M 150, 150 m -130, 0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" />
+                            </defs>
+                            <text fill="#ffffff" class="circle-text">
+                                <textPath href="#circlePath" font-size="38">
+                                    More info More info More info More info More info
+                                </textPath>
+                            </text>
+                            <foreignObject x="130" y="70" width="40" height="150">
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <a href="#about">
+                                        <div class="arrow">
+                                            <div class="arrow-line"></div>
+                                            <div class="arrow-head"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </foreignObject>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" style="background-image: url('./assets/imgs/about-bg.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="head">About Us<span></span></h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="head">Infinitiy<span></span></h1>
+                        <p>From implementing new business strategies to ultra-efficient work processes, FGI LLC is ready
+                            to tackle any challenge and put you on the path to success.</p>
+                    </div>
+                </div>
+                <div class="slider-area">
+                    <div class="slider-img">
+                        <img src="./assets/imgs/slider1.png" alt="">
+                    </div>
+                    <div class="slider-img">
+                        <img src="./assets/imgs/slider1.png" alt="">
+                    </div>
+                    <div class="slider-img">
+                        <img src="./assets/imgs/slider1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h1 class="head">Services<span></span></h1>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-card">
+                            <div class="hover-wrapper"></div>
+                            <h5>New Business origination</h5>
+                            <p>We help  our customers to expand their business by....</p>
+                            <a href="#" class="learn-more">
+                                <i class="fa-solid fa-chevron-right fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-card">
+                            <div class="hover-wrapper"></div>
+                            <h5>Business strategy</h5>
+                            <p>Snap and categorize receipts inseconds and link your bank account.</p>
+                            <a href="#" class="learn-more">
+                                <i class="fa-solid fa-chevron-right fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-card">
+                            <div class="hover-wrapper"></div>
+                            <h5>Commercial diplomacy</h5>
+                            <p>Set up payroll and bonuses for all your employees, and never be late on salaries.</p>
+                            <a href="#" class="learn-more">
+                                <i class="fa-solid fa-chevron-right fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24333.029167870798!2d49.7303931!3d40.3283985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307f85fafd775f%3A0xa0447e35f86299a!2sLokbatan%20Cultural%20Center!5e0!3m2!1sen!2saz!4v1718464922921!5m2!1sen!2saz"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h1 class="head">Contact us<span></span></h1>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <form action="#">
+                            <div class="input-group">
+                                <label for="firstname">First Name</label>
+                                <input id="firstname" type="text" name="firstname">
+                            </div>
+                            <div class="input-group">
+                                <label for="lastname">Last Name</label>
+                                <input id="lastname" type="text" name="lastname">
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email">
+                            </div>
+                            <div class="input-group">
+                                <label for="subject">Subject</label>
+                                <input id="subject" type="text" name="subject">
+                            </div>
+                            <div class="input-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" cols="50" type="text"></textarea>
+                            </div>
+                            <button type="submit"><span>Submit</span> <i
+                                    class="fa-solid fa-arrow-right-long fa-sm"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-bg">
+                    <img src="./assets/imgs/contact-bg.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-4">
+                    <div class="logo">
+                        <img src="./assets/imgs/logo.png" alt="">
+                    </div>
+                    <div class="social-media">
+                        <h6>Social media</h6>
+                        <ul class="social-media-links">
+                            <a href="#">
+                                <li>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4">
+                    <ul class="utility-pages">
+                        <h6>Utility pages</h6>
+                        <li><a href="#">Style guide</a></li>
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">404 not found</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="subscribe">
+                        <h6>Subscribe to our newsletter</h6>
+                        <p>*Only valuable resource no bullshit</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your e-mail">
+                            <button type="submit"><i class="fa-solid fa-chevron-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© All rights reserved by FGI LLC</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+<script src="./assets/js/common.js"></script>
+<script src="./assets/js/home.js"></script>
+
+</html>
