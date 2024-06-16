@@ -52,10 +52,10 @@ header {
         .language {
             position: relative;
 
-            a {
+            p {
                 color: var(--bs-white);
                 text-transform: uppercase;
-
+                cursor: pointer;
                 i {
                     display: inline-block;
                     margin-left: 5px;
@@ -71,7 +71,7 @@ header {
                 opacity: 0;
                 visibility: hidden;
                 transition: $transition-2;
-                a {
+                p {
                     display: block;
                     color: $text-color;
                     padding: 5px 10px;
@@ -147,7 +147,7 @@ header {
 
             .language {
 
-                a,
+                p,
                 i {
                     color: var(--bs-dark);
                 }
@@ -167,7 +167,7 @@ header {
 
     .language {
 
-        a,
+        p,
         i {
             color: var(--bs-dark);
         }
@@ -189,7 +189,7 @@ header {
 
     .menu {
         .active-item {
-            a {
+            p {
                 color: $text-color;
                 font-weight: normal;
             }

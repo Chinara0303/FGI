@@ -31,7 +31,7 @@ button, input, textarea {
 
 .contact-btn {
   position: fixed;
-  bottom: 10%;
+  top: 76%;
   right: 0;
   display: flex;
   align-items: center;
@@ -41,6 +41,7 @@ button, input, textarea {
   padding: 10px;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
+  z-index: 999;
 }
 .contact-btn img {
   width: 20px;
@@ -57,4 +58,15 @@ button, input, textarea {
   display: inline-block;
   background-color: #ea001b;
   margin-left: 2px;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .contact-btn {
+    top: 45% !important;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .contact-btn {
+    top: 30% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

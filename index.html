@@ -18,50 +18,54 @@
 <body>
     <header class="header-container">
         <div class="overlay"></div>
-        <div class="container ">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-6">
                     <div class="logo">
-                        <img src="./assets/imgs/logo.png" alt="">
+                        <img src="./assets/imgs/logo.png" alt="Logo">
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8 col-md-8 col-6">
                     <ul class="hamburger-menu-btn d-lg-none d-md-none d-block">
                         <li><i class="fa-solid fa-bars fa-lg"></i></li>
                     </ul>
-                    <ul class="d-lg-flex d-md-flex d-none">
-                        <li class="active-item"><a href="#">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#map">Map</a></li>
-                        <li><a href="#contact">Contact us</a></li>
+                    <ul class="d-lg-flex d-md-flex d-none navigation">
+                        <li class="nav-item active-item"><a href="#slider">Home</a></li>
+                        <li class="nav-item"><a href="#about">About us</a></li>
+                        <li class="nav-item"><a href="#services">Services</a></li>
+                        <li class="nav-item"><a href="#map">Map</a></li>
+                        <li class="nav-item"><a href="#contact">Contact us</a></li>
                         <li class="language">
-                            <a href="#">Eng<i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                            <p>Eng<i class="fa-solid fa-chevron-down fa-xs"></i></p>
                             <div class="languages">
-                                <a href="#">AZE</a>
-                                <a href="#">RU</a>
-                                <a href="#">ENG</a>
+                                <p>AZE</p>
+                                <p>RU</p>
+                                <p>ENG</p>
                             </div>
                         </li>
                     </ul>
                     <div class="d-lg-none d-md-none d-block menu">
                         <div class="top-area">
                             <div class="logo">
-                                <img src="./assets/imgs/logo.png" alt="">
+                                <img src="./assets/imgs/logo.png" alt="Logo">
                             </div>
                             <div class="close-btn">
                                 <i class="fa-regular fa-circle-xmark fa-xl"></i>
                             </div>
                         </div>
                         <ul class="d-block">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#map">Map</a></li>
-                            <li><a href="#contact">Contact us</a></li>
+                            <li class="nav-item active-item"><a href="#slider">Home</a></li>
+                            <li class="nav-item"><a href="#about">About us</a></li>
+                            <li class="nav-item"><a href="#services">Services</a></li>
+                            <li class="nav-item"><a href="#map">Map</a></li>
+                            <li class="nav-item"><a href="#contact">Contact us</a></li>
                             <li class="language">
-                                <a href="#">Eng</a>
-                                <i class="fa-solid fa-chevron-down fa-xs"></i>
+                                <p>Eng<i class="fa-solid fa-chevron-down fa-xs"></i></p>
+                                <div class="languages">
+                                    <p>AZE</p>
+                                    <p>RU</p>
+                                    <p>ENG</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -71,11 +75,6 @@
     </header>
 
     <main>
-        <a class="contact-btn" href="tel:1234567">
-            <p>Contact us</p>
-            <img src="./assets/imgs/whatsapp.svg" alt="">
-        </a>
-
         <section id="slider" style="background-image: url('./assets/imgs/intro.png');">
             <div class="overlay" style="background-image: url('./assets/imgs/shadow.png');">
                 <div class="container">
@@ -122,6 +121,10 @@
                         </svg>
                     </div>
                 </div>
+                <a class="contact-btn" href="https://wa.me/994516898476">
+                    <p>Contact us</p>
+                    <img src="./assets/imgs/whatsapp.svg" alt="">
+                </a>
             </div>
         </section>
 

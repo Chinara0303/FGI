@@ -31,7 +31,7 @@ button, input, textarea {
 
 .contact-btn {
   position: fixed;
-  bottom: 10%;
+  top: 76%;
   right: 0;
   display: flex;
   align-items: center;
@@ -41,6 +41,7 @@ button, input, textarea {
   padding: 10px;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
+  z-index: 999;
 }
 .contact-btn img {
   width: 20px;
@@ -59,6 +60,16 @@ button, input, textarea {
   margin-left: 2px;
 }
 
+@media (min-width: 300px) and (max-width: 767px) {
+  .contact-btn {
+    top: 45% !important;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .contact-btn {
+    top: 30% !important;
+  }
+}
 header {
   padding: 10px;
   position: fixed;
@@ -104,11 +115,12 @@ header ul li a {
 header ul .language {
   position: relative;
 }
-header ul .language a {
+header ul .language p {
   color: var(--bs-white);
   text-transform: uppercase;
+  cursor: pointer;
 }
-header ul .language a i {
+header ul .language p i {
   display: inline-block;
   margin-left: 5px;
 }
@@ -121,13 +133,13 @@ header ul .language .languages {
   visibility: hidden;
   transition: all 400ms linear;
 }
-header ul .language .languages a {
+header ul .language .languages p {
   display: block;
   color: #a1a5a7;
   padding: 5px 10px;
   transition: all 100ms linear;
 }
-header ul .language .languages a:hover {
+header ul .language .languages p:hover {
   background-color: #f4f4f4;
   color: var(--bs-dark);
 }
@@ -184,7 +196,7 @@ header .menu ul li a {
   color: var(--bs-dark);
   font-weight: normal;
 }
-header .menu ul .language a,
+header .menu ul .language p,
 header .menu ul .language i {
   color: var(--bs-dark);
 }
@@ -195,7 +207,7 @@ header .active-menu {
 .active-header {
   background-color: var(--bs-white);
 }
-.active-header .language a,
+.active-header .language p,
 .active-header .language i {
   color: var(--bs-dark);
 }
@@ -206,7 +218,7 @@ header .active-menu {
 .active-header .hamburger-menu-btn li i {
   color: #a1a5a7;
 }
-.active-header .menu .active-item a {
+.active-header .menu .active-item p {
   color: #a1a5a7;
   font-weight: normal;
 }
@@ -260,6 +272,10 @@ header .active-menu {
   font-size: 22px;
   color: var(--bs-white);
   text-align: center;
+}
+#slider .socials-wrapper .social-links li a img {
+  max-width: 100%;
+  max-height: 100%;
 }
 #slider .socials-wrapper .bottom-btn {
   position: absolute;

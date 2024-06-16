@@ -1,7 +1,7 @@
 
 .contact-btn {
     position: fixed;
-    bottom: 10%;
+    top: 76%;
     right: 0;
     @include flex;
     gap: 4px;
@@ -9,6 +9,7 @@
     background-color: rgba(5, 168, 132, 1);
     padding: 10px;
     writing-mode: vertical-rl;
+    z-index: 999;
     img {
         width: 20px;
         height: 20px;
@@ -26,5 +27,17 @@
         display: inline-block;
         background-color: $primary-color;
         margin-left: 2px;
+    }
+}
+
+@media (min-width:300px) and (max-width:767px){
+    .contact-btn{
+        top: 45% !important;
+    }
+}
+
+@media (min-width:767px) and (max-width:1024px){
+    .contact-btn{
+        top: 30% !important;
     }
 }
