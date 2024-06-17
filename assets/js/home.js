@@ -34,3 +34,4 @@ $('.slider-area').slick({
     // instead of a settings object
   ]
 });
+

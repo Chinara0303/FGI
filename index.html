@@ -193,10 +193,9 @@
         </section>
 
         <section id="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24333.029167870798!2d49.7303931!3d40.3283985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307f85fafd775f%3A0xa0447e35f86299a!2sLokbatan%20Cultural%20Center!5e0!3m2!1sen!2saz!4v1718464922921!5m2!1sen!2saz"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <gmp-map center="25.118818283081055,55.207191467285156" zoom="14" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker position="25.118818283081055,55.207191467285156" title="My location"></gmp-advanced-marker>
+              </gmp-map>
         </section>
 
         <section id="contact">
@@ -307,4 +306,7 @@
 <script src="./assets/js/common.js"></script>
 <script src="./assets/js/home.js"></script>
 
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzbXHm5ilXxFNXyIympSxRv32sLkET3zI&callback=console.debug&libraries=maps,marker&v=beta">
+</script>
+   
 </html>

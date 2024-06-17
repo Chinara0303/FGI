@@ -74,7 +74,7 @@ header {
   padding: 10px;
   position: fixed;
   width: 100%;
-  transition: all 100ms linear;
+  transition: all 300ms linear;
   z-index: 999;
 }
 header .overlay {
@@ -111,6 +111,11 @@ header ul {
 header ul li a {
   color: #a1a5a7;
   font-size: 16px;
+  transition: all 300ms linear;
+  font-weight: 500;
+}
+header ul li:hover a {
+  color: var(--bs-white);
 }
 header ul .language {
   position: relative;
@@ -137,7 +142,7 @@ header ul .language .languages p {
   display: block;
   color: #a1a5a7;
   padding: 5px 10px;
-  transition: all 100ms linear;
+  transition: all 300ms linear;
 }
 header ul .language .languages p:hover {
   background-color: #f4f4f4;
@@ -206,6 +211,9 @@ header .active-menu {
 
 .active-header {
   background-color: var(--bs-white);
+}
+.active-header ul li:hover a {
+  color: var(--bs-dark);
 }
 .active-header .language p,
 .active-header .language i {
@@ -496,9 +504,9 @@ header .active-menu {
   visibility: visible;
 }
 
-#map iframe {
+#map {
+  height: 80vh;
   width: 100%;
-  height: 450px;
 }
 
 #contact {

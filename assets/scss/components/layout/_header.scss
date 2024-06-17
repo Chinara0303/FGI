@@ -43,9 +43,18 @@ header {
         gap: 30px;
 
         li {
+
             a {
                 color: $text-color;
                 font-size: 16px;
+                transition: $transition-1;
+                font-weight: 500;
+            }
+
+            &:hover {
+                a {
+                    color: var(--bs-white);
+                }
             }
         }
 
@@ -56,6 +65,7 @@ header {
                 color: var(--bs-white);
                 text-transform: uppercase;
                 cursor: pointer;
+
                 i {
                     display: inline-block;
                     margin-left: 5px;
@@ -71,19 +81,22 @@ header {
                 opacity: 0;
                 visibility: hidden;
                 transition: $transition-2;
+
                 p {
                     display: block;
                     color: $text-color;
                     padding: 5px 10px;
                     transition: $transition-1;
+
                     &:hover {
                         background-color: $footer-bg-color;
                         color: var(--bs-dark);
                     }
                 }
             }
-            .active-languages{
-                opacity:1;
+
+            .active-languages {
+                opacity: 1;
                 visibility: visible;
             }
         }
@@ -164,6 +177,17 @@ header {
 
 .active-header {
     background-color: var(--bs-white);
+
+    ul {
+        li {
+
+            &:hover {
+                a {
+                    color: var(--bs-dark);
+                }
+            }
+        }
+    }
 
     .language {
 
