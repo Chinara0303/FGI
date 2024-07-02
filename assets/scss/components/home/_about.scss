@@ -1,5 +1,5 @@
 #about {
-    padding: $fs-8 0;
+    padding: $fs-10 0;
 
     p {
         word-spacing: 6.5px;
@@ -7,14 +7,12 @@
 
     .slider-area {
         margin: 20px 0;
-
+        margin-right: 7rem;
         .slider-img {
             img {
                 width: 100%;
                 height: 100%;
             }
-
-
         }
     }
 }
@@ -70,7 +68,9 @@
         font-size: 20px !important;
     }
 }
+
 @media (min-width:768px) and (max-width:1024px) {
+
     .slick-next,
     .slick-prev {
         top: 85% !important;

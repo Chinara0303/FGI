@@ -1,11 +1,19 @@
 #contact {
-    padding: $fs-8 0 10.7rem 0;
-    background-color: $primary-color;
     color: var(--bs-white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .overlay {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding: $fs-8 0 10.7rem 0;
+    }
 
     .head {
         span {
-            background-color: $primary-bg-color;
+            background-color: $primary-color;
         }
     }
 
@@ -26,6 +34,11 @@
             input {
                 width: 83%;
                 padding: 10px;
+            }
+            label{
+                span{
+                    color:$primary-color;
+                }
             }
 
         }
