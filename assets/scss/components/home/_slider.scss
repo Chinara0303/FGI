@@ -21,6 +21,7 @@
         p {
             color: $text-color;
             margin: $fs-7 0;
+            font-family: $ff-poppins;
         }
 
         .more-btn {
@@ -143,19 +144,25 @@
     #slider {
         background-position: right !important;
 
-        h1 {
-            font-size: $fs-5  !important;
-        }
-
         .info-wrapper {
-            width: 100% !important;
+            width: 92% !important;
+            margin: auto;
+
+            h1 {
+                font-size: $fs-5  !important;
+            }
+
 
             p {
-                margin: $fs-4 0 $fs-7 0 !important;
+                margin: $fs-2 0 $fs-7 0 !important;
+                font-size: 14px;
             }
         }
 
         .socials-wrapper {
+            width: 92% !important;
+            margin: auto;
+
             .social-links {
                 width: 100%;
 
@@ -169,6 +176,7 @@
                 display: none;
             }
         }
+
         .wrapper {
             left: 40% !important;
         }
@@ -183,6 +191,14 @@
         .info-wrapper {
             width: 100% !important;
 
+            p {
+                margin: $fs-2 0 $fs-7 0 !important;
+            }
+        }
+
+        .wrapper {
+            top: 42% !important;
+            left: 47% !important;
         }
 
         .socials-wrapper {
@@ -190,9 +206,10 @@
                 display: none;
             }
 
-           
+
         }
-       
+
     }
+  
 
 }

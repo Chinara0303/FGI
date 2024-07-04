@@ -68,13 +68,6 @@
 
 @media (min-width:300px) and (max-width:767px) {
     #contact {
-        .contact-bg {
-            img {
-                width: 100%;
-                left: -25%;
-            }
-        }
-
         form {
             .input-group {
                 display: block !important;
@@ -86,16 +79,5 @@
             }
 
         }
-    }
-}
-
-@media (min-width:768px) and (max-width:1024px) {
-    #contact {
-        padding: $fs-8;
-
-        .contact-bg {
-            display: none;
-        }
-
     }
 }

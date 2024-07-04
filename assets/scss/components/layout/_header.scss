@@ -228,3 +228,14 @@ header {
         height: auto !important;
     }
 }
+@media (min-width:768px) and (max-width:1024px) {
+   header{
+    ul{
+        li{
+            a{
+                font-size: $fs-2;
+            }
+        }
+    }
+   }
+}
