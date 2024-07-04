@@ -11,7 +11,7 @@
     .info-wrapper {
         color: var(--bs-white);
         width: 40%;
-        padding: 8rem 0 4rem 0;
+        padding: 7rem 0 4rem 0;
 
         h1 {
             letter-spacing: 2px;
@@ -63,7 +63,7 @@
 
         .bottom-btn {
             position: absolute;
-            top: 82%;
+            top: 78%;
             left: 12%;
             width: 18px;
 
@@ -143,15 +143,34 @@
     #slider {
         background-position: right !important;
 
+        h1 {
+            font-size: $fs-5  !important;
+        }
+
         .info-wrapper {
             width: 100% !important;
 
+            p {
+                margin: $fs-4 0 $fs-7 0 !important;
+            }
         }
 
         .socials-wrapper {
+            .social-links {
+                width: 100%;
+
+                li {
+                    width: 25px !important;
+                    height: 25px !important;
+                }
+            }
+
             .bottom-btn {
                 display: none;
             }
+        }
+        .wrapper {
+            left: 40% !important;
         }
     }
 
@@ -170,7 +189,10 @@
             .bottom-btn {
                 display: none;
             }
+
+           
         }
+       
     }
 
 }

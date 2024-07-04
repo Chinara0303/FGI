@@ -17,6 +17,7 @@
 
 <body>
     <header class="header-container">
+        <div class="overlay"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-6">
@@ -25,8 +26,16 @@
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8 col-md-8 col-6">
-                    <ul class="hamburger-menu-btn d-lg-none d-md-none d-block">
-                        <li><i class="fa-solid fa-bars fa-lg"></i></li>
+                    <ul class="right-side d-lg-none d-md-none d-flex">
+                        <li class="language">
+                            <p>Eng<i class="fa-solid fa-chevron-down fa-xs"></i></p>
+                            <div class="languages">
+                                <p>AZE</p>
+                                <p>RU</p>
+                                <p>ENG</p>
+                            </div>
+                        </li>
+                        <li class="hamburger-menu-btn"><i class="fa-solid fa-bars fa-lg"></i></li>
                     </ul>
                     <ul class="d-lg-flex d-md-flex d-none navigation">
                         <li class="nav-item active-item"><a href="#slider">Home</a></li>
@@ -58,14 +67,6 @@
                             <li class="nav-item"><a href="#services">Services</a></li>
                             <li class="nav-item"><a href="#map">Map</a></li>
                             <li class="nav-item"><a href="#contact">Contact us</a></li>
-                            <li class="language">
-                                <p>Eng<i class="fa-solid fa-chevron-down fa-xs"></i></p>
-                                <div class="languages">
-                                    <p>AZE</p>
-                                    <p>RU</p>
-                                    <p>ENG</p>
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -83,7 +84,7 @@
                             to
                             tackle any challenge and put you on the path to success.
                         </p>
-                        <a class="more-btn" href="#">More info<i class="fa-solid fa-arrow-right-long"></i></a>
+                        <a class="more-btn" href="#contact">More info<i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                     <div class="socials-wrapper">
                         <ul class="social-links">
@@ -97,27 +98,29 @@
                         </div>
                     </div>
                     <div class="wrapper">
-                        <svg width="150" height="150" viewBox="0 0 300 300" class="circle">
-                            <defs>
-                                <path id="circlePath"
-                                    d="M 150, 150 m -130, 0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" />
-                            </defs>
-                            <text fill="#ffffff" class="circle-text">
-                                <textPath href="#circlePath" font-size="38" startOffset="0%" dominant-baseline="middle">
-                                    More info More info More info More info More info
-                                </textPath>
-                            </text>
-                            <foreignObject x="130" y="70" width="40" height="150">
-                                <div xmlns="http://www.w3.org/1999/xhtml">
-                                    <a href="#about">
+                        <a href="#about">
+                            <svg width="110" height="110" viewBox="0 0 300 300" class="circle">
+                                <defs>
+                                    <path id="circlePath"
+                                        d="M 150, 150 m -130, 0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" />
+                                </defs>
+                                <text fill="#ffffff" class="circle-text">
+                                    <textPath href="#circlePath" font-size="38" startOffset="0%"
+                                        dominant-baseline="middle">
+                                        More info More info More info More info More info
+                                    </textPath>
+                                </text>
+                                <foreignObject x="130" y="70" width="40" height="150">
+                                    <div>
                                         <div class="arrow">
                                             <div class="arrow-line"></div>
                                             <div class="arrow-head"></div>
                                         </div>
-                                    </a>
-                                </div>
-                            </foreignObject>
-                        </svg>
+                                    </div>
+                                </foreignObject>
+                            </svg>
+                        </a>
+
                     </div>
                 </div>
                 <a class="contact-btn" href="https://wa.me/994516898476" target="_blank">
@@ -134,7 +137,7 @@
                         <h1 class="head">About Us<span></span></h1>
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="head">Infinitiy<span></span></h1>
+                        <h1 class="head" style="text-align: start !important;">Infinitiy<span></span></h1>
                         <p>From implementing new business strategies to ultra-efficient work processes, FGI LLC is ready
                             to tackle any challenge and put you on the path to success.</p>
                     </div>
@@ -241,59 +244,60 @@
     </main>
 
     <footer>
-        <div class="container footer">
-            <div class="row">
-                <div class="col-xl-5 col-lg-5 col-md-4">
-                    <div class="logo">
-                        <img src="./assets/imgs/logo.png" alt="">
+        <div class="container ">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-4">
+                        <div class="logo">
+                            <img src="./assets/imgs/logo.png" alt="">
+                        </div>
+                        <div class="social-media">
+                            <h6>Social media</h6>
+                            <ul class="social-media-links">
+                                <a href="#">
+                                    <li>
+                                        <img src="./assets/imgs/instagram-footer.svg" alt="">
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        <img src="./assets/imgs/twitter-footer.svg" alt="">
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        <img src="./assets/imgs/facebook-footer.svg" alt="">
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li>
+                                        <img src="./assets/imgs/linkedin-footer.svg" alt="">
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="social-media">
-                        <h6>Social media</h6>
-                        <ul class="social-media-links">
-                            <a href="#">
-                                <li>
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <i class="fa-brands fa-twitter"></i>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </li>
-                            </a>
-                            <a href="#">
-                                <li>
-                                    <img src="./assets/imgs/instagramlogo.png" alt="">
-                                </li>
-                            </a>
+                    <div class="col-xl-3 col-lg-3 col-md-4">
+                        <ul class="utility-pages">
+                            <h6>Utility pages</h6>
+                            <li><a href="#">Style guide</a></li>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">404 not found</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4">
-                    <ul class="utility-pages">
-                        <h6>Utility pages</h6>
-                        <li><a href="#">Style guide</a></li>
-                        <li><a href="#">Log in</a></li>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">404 not found</a></li>
-                    </ul>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                    <div class="subscribe">
-                        <h6>Subscribe to our newsletter</h6>
-                        <p>*Only valuable resource no bullshit</p>
-                        <form action="#">
-                            <input type="text" placeholder="Enter your e-mail">
-                            <button type="submit"><i class="fa-solid fa-chevron-right"></i></button>
-                        </form>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="subscribe">
+                            <h6>Subscribe to our newsletter</h6>
+                            <p>*Only valuable resource no bullshit</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter your e-mail">
+                                <button type="submit"><i class="fa-solid fa-chevron-right"></i></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="copyright">
             <p>© All rights reserved by FGI LLC</p>

@@ -1,4 +1,3 @@
-
 .contact-btn {
     position: fixed;
     top: 76%;
@@ -10,6 +9,7 @@
     padding: 10px;
     writing-mode: vertical-rl;
     z-index: 999;
+
     img {
         width: 20px;
         height: 20px;
@@ -30,14 +30,24 @@
     }
 }
 
-@media (min-width:300px) and (max-width:767px){
-    .contact-btn{
-        top: 45% !important;
+@media (min-width:300px) and (max-width:767px) {
+    .contact-btn {
+        top: 60% !important;
+    }
+
+    .head {
+        text-align: center !important;
+    }
+
+    #services,
+    #about,
+    #map {
+        padding: $fs-8 0;
     }
 }
 
-@media (min-width:767px) and (max-width:1024px){
-    .contact-btn{
+@media (min-width:767px) and (max-width:1024px) {
+    .contact-btn {
         top: 30% !important;
     }
 }

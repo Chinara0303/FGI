@@ -62,7 +62,15 @@ button, input, textarea {
 
 @media (min-width: 300px) and (max-width: 767px) {
   .contact-btn {
-    top: 45% !important;
+    top: 60% !important;
+  }
+  .head {
+    text-align: center !important;
+  }
+  #services,
+#about,
+#map {
+    padding: 3rem 0;
   }
 }
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -75,9 +83,18 @@ header {
   position: fixed;
   width: 100%;
   transition: all 300ms linear;
-  z-index: 999;
-  background-size: cover;
-  background-position: center;
+  z-index: 99999;
+}
+header .overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
 }
 header .logo {
   width: 190.67px;
@@ -88,8 +105,7 @@ header .logo img {
   height: 100%;
 }
 header .active-item a {
-  color: var(--bs-white);
-  font-weight: 600;
+  color: #ea001b;
 }
 header ul {
   display: flex;
@@ -98,13 +114,13 @@ header ul {
   gap: 30px;
 }
 header ul li a {
-  color: #a1a5a7;
-  font-size: 16px;
+  color: var(--bs-white);
+  font-size: 18px;
   transition: all 300ms linear;
   font-weight: 500;
 }
 header ul li:hover a {
-  color: var(--bs-white);
+  color: #ea001b;
 }
 header ul .language {
   position: relative;
@@ -141,11 +157,13 @@ header ul .language .active-languages {
   opacity: 1;
   visibility: visible;
 }
-header .hamburger-menu-btn {
+header .right-side {
+  display: flex;
+  align-items: center;
+}
+header .right-side .hamburger-menu-btn {
   text-align: end;
   cursor: pointer;
-}
-header .hamburger-menu-btn li i {
   color: var(--bs-white);
 }
 header .menu {
@@ -199,27 +217,35 @@ header .active-menu {
 }
 
 .active-header {
-  background-color: var(--bs-white);
+  background-color: rgba(255, 255, 255, 0.7882352941);
+}
+.active-header ul li a {
+  color: var(--bs-dark);
 }
 .active-header ul li:hover a {
-  color: var(--bs-dark);
+  color: #ea001b;
 }
 .active-header .language p,
 .active-header .language i {
   color: var(--bs-dark);
 }
 .active-header .active-item a {
-  color: var(--bs-dark);
-  font-weight: 600;
+  color: #ea001b;
 }
-.active-header .hamburger-menu-btn li i {
-  color: #a1a5a7;
+.active-header .hamburger-menu-btn {
+  color: var(--bs-dark) !important;
 }
 .active-header .menu .active-item p {
   color: #a1a5a7;
   font-weight: normal;
 }
 
+@media (min-width: 300px) and (max-width: 767px) {
+  .logo {
+    width: 120px !important;
+    height: auto !important;
+  }
+}
 #slider {
   background-size: cover;
   background-position: center;
@@ -232,7 +258,7 @@ header .active-menu {
 #slider .info-wrapper {
   color: var(--bs-white);
   width: 40%;
-  padding: 8rem 0 4rem 0;
+  padding: 7rem 0 4rem 0;
 }
 #slider .info-wrapper h1 {
   letter-spacing: 2px;
@@ -275,7 +301,7 @@ header .active-menu {
 }
 #slider .socials-wrapper .bottom-btn {
   position: absolute;
-  top: 82%;
+  top: 78%;
   left: 12%;
   width: 18px;
 }
@@ -348,11 +374,27 @@ header .active-menu {
   #slider {
     background-position: right !important;
   }
+  #slider h1 {
+    font-size: 2rem !important;
+  }
   #slider .info-wrapper {
     width: 100% !important;
   }
+  #slider .info-wrapper p {
+    margin: 1.5rem 0 2.5rem 0 !important;
+  }
+  #slider .socials-wrapper .social-links {
+    width: 100%;
+  }
+  #slider .socials-wrapper .social-links li {
+    width: 25px !important;
+    height: 25px !important;
+  }
   #slider .socials-wrapper .bottom-btn {
     display: none;
+  }
+  #slider .wrapper {
+    left: 40% !important;
   }
 }
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -373,7 +415,7 @@ header .active-menu {
   word-spacing: 6.5px;
 }
 #about .slider-area {
-  margin: 20px 0;
+  margin-top: 4rem;
   margin-right: 7rem;
 }
 #about .slider-area .slider-img img {
@@ -428,6 +470,9 @@ header .active-menu {
 .slick-prev:before {
     font-size: 20px !important;
   }
+  #about .slider-area {
+    margin-right: 4rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .slick-next,
@@ -437,7 +482,7 @@ header .active-menu {
 }
 #services {
   background: rgb(255, 255, 255);
-  padding: 3rem;
+  padding: 5rem 0;
 }
 #services .service-card {
   background-color: var(--bs-white);
@@ -505,6 +550,7 @@ header .active-menu {
 #map {
   height: 80vh;
   width: 100%;
+  padding: 5rem 0;
 }
 
 #contact {
@@ -667,6 +713,9 @@ footer .copyright {
   }
   footer .utility-pages, footer .subscribe {
     margin-top: 2rem;
+  }
+  footer .footer {
+    padding: inherit !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {

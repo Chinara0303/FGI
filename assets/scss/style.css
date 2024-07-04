@@ -62,7 +62,15 @@ button, input, textarea {
 
 @media (min-width: 300px) and (max-width: 767px) {
   .contact-btn {
-    top: 45% !important;
+    top: 60% !important;
+  }
+  .head {
+    text-align: center !important;
+  }
+  #services,
+#about,
+#map {
+    padding: 3rem 0;
   }
 }
 @media (min-width: 767px) and (max-width: 1024px) {

@@ -6,8 +6,8 @@
     }
 
     .slider-area {
-        margin: 20px 0;
-        margin-right: 7rem;
+        margin-top: $fs-9;
+        margin-right: $fs-12;
         .slider-img {
             img {
                 width: 100%;
@@ -66,6 +66,11 @@
     .slick-next:before,
     .slick-prev:before {
         font-size: 20px !important;
+    }
+    #about{
+        .slider-area{
+            margin-right: $fs-9;
+        }
     }
 }
 
