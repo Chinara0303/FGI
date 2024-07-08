@@ -80,6 +80,10 @@ button, input, textarea {
   .head {
     text-align: center !important;
   }
+  header .logo {
+    width: 130px !important;
+    height: auto !important;
+  }
 }
 header {
   padding: 10px;
@@ -379,7 +383,7 @@ header .active-menu {
   transition: all 0.3s linear;
 }
 
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 800px) {
   #slider {
     background-position: right !important;
   }
@@ -412,7 +416,7 @@ header .active-menu {
     left: 40% !important;
   }
 }
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   #slider {
     background-position: right !important;
   }

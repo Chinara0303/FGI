@@ -44,6 +44,7 @@
     #map {
         padding: $fs-8 0;
     }
+
 }
 
 @media (min-width:767px) and (max-width:1024px) {
@@ -52,5 +53,11 @@
     }
     .head {
         text-align: center !important;
+    }
+    header{
+        .logo{
+            width: 130px !important;
+            height: auto !important;
+        }
     }
 }
