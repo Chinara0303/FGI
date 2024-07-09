@@ -22,7 +22,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-6">
                     <div class="logo">
-                        <img src="./assets/imgs/logo.svg" alt="Logo">
+                        <img src="./assets/imgs/main-logo.svg" alt="Logo" id="logo">
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8 col-md-8 col-6">
@@ -55,7 +55,7 @@
                     <div class="d-lg-none d-md-none d-block menu">
                         <div class="top-area">
                             <div class="logo">
-                                <img src="./assets/imgs/logo.svg" alt="Logo">
+                                <img src="./assets/imgs/main-logo.svg" alt="Logo">
                             </div>
                             <div class="close-btn">
                                 <i class="fa-regular fa-circle-xmark fa-xl"></i>
@@ -202,15 +202,13 @@
             </gmp-map>
         </section>
 
-        <section id="contact" style="background-image: url('./assets/imgs/contact-bg.png');">
-            <div class="overlay" style="background-image:url('./assets/imgs/Rectangle\ 34.png') ;">
+        <section id="contact" style="background-image: url('./assets/imgs/contact-bg.svg');">
+            <div class="overlay" style="background-image:url('./assets/imgs/Rectangle\ 34.svg') ;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-12">
-                            <h1 class="head">Contact us<span></span></h1>
-                        </div>
-                        <div class="col-lg-8 col-12">
-                            <form action="#">
+                    <h1 class="head">Contact us<span></span></h1>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
                                 <div class="input-group">
                                     <label for="firstname">First Name <span>*</span></label>
                                     <input id="firstname" type="text" name="firstname" required>
@@ -223,6 +221,9 @@
                                     <label for="email">Email <span>*</span></label>
                                     <input id="email" type="email" name="email" required>
                                 </div>
+
+                            </div>
+                            <div class="col-lg-6 col-12">
                                 <div class="input-group">
                                     <label for="subject">Subject</label>
                                     <input id="subject" type="text" name="subject">
@@ -233,11 +234,12 @@
                                 </div>
                                 <button type="submit"><span>Submit</span> <i
                                         class="fa-solid fa-arrow-right-long fa-sm"></i></button>
-                            </form>
-                        </div>
-                    </div>
-
+                            </div>
+                    </form>
                 </div>
+
+            </div>
+
             </div>
 
         </section>

@@ -589,26 +589,27 @@ header .active-menu {
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding: 3rem 0 10.7rem 0;
+  padding: 5rem 0;
 }
 #contact .head span {
   background-color: #ea001b;
 }
 #contact form {
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 #contact form .input-group {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   flex-wrap: nowrap;
+  width: 90% !important;
 }
 #contact form .input-group input {
   height: 40px;
 }
 #contact form .input-group textarea,
 #contact form .input-group input {
-  width: 83%;
+  width: 70%;
   padding: 10px;
 }
 #contact form .input-group label span {
@@ -623,6 +624,7 @@ header .active-menu {
   align-items: center;
   gap: 5px;
   float: right;
+  margin-right: 10%;
 }
 #contact .contact-bg {
   position: relative;
@@ -636,6 +638,7 @@ header .active-menu {
 @media (min-width: 300px) and (max-width: 767px) {
   #contact form .input-group {
     display: block !important;
+    margin: 20px auto !important;
   }
   #contact form .input-group input,
 #contact form .input-group textarea {
