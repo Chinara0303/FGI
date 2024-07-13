@@ -75,59 +75,6 @@
         }
     }
 
-    // .wrapper {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     position: absolute;
-    //     top: 70%;
-    //     left: 50%;
-
-    //     .circle {
-    //         position: relative;
-    //     }
-
-    //     .circle-text {
-    //         transform-origin: center;
-    //         font-size: 20px;
-    //         animation: rotate 30s linear infinite;
-    //     }
-
-    //     @keyframes rotate {
-    //         0% {
-    //             transform: rotate(0deg);
-    //         }
-
-    //         100% {
-    //             transform: rotate(360deg);
-    //         }
-    //     }
-
-    //     .arrow {
-    //         position: absolute;
-    //         top: 50%;
-    //         left: 50%;
-    //         transform: translate(-50%, -50%);
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: center;
-    //     }
-
-    //     .arrow-line {
-    //         width: 2px;
-    //         height: 100px;
-    //         background-color: white;
-    //     }
-
-    //     .arrow-head {
-    //         width: 0;
-    //         height: 0;
-    //         border-left: 10px solid transparent;
-    //         border-right: 10px solid transparent;
-    //         border-top: 20px solid white;
-    //     }
-    // }
-
     .wrapper {
         display: flex;
         justify-content: center;
@@ -135,54 +82,51 @@
         position: absolute;
         top: 70%;
         left: 50%;
-        transform: translate(-50%, -70%);
-    }
 
-    .circle {
-        position: relative;
-    }
-
-    .circle-text {
-        transform-origin: center;
-        font-size: 20px;
-        animation: rotate 30s linear infinite;
-    }
-
-    @keyframes rotate {
-        0% {
-            transform: rotate(0deg);
+        .circle {
+            position: relative;
         }
 
-        100% {
-            transform: rotate(360deg);
+        .circle-text {
+            transform-origin: center;
+            font-size: 20px;
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .arrow-line {
+            width: 2px;
+            height: 100px;
+            background-color: white;
+        }
+
+        .arrow-head {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid white;
         }
     }
-
-    .arrow {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .arrow-line {
-        width: 2px;
-        height: 100px;
-        background-color: white;
-    }
-
-    .arrow-head {
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 20px solid white;
-    }
-
-
 
 }
 
@@ -192,26 +136,6 @@
     z-index: 9999;
     transition: all .3s linear;
 
-}
-
-/* iPhone üçün adaptiv dizayn */
-@media only screen and (max-width: 767px) {
-    .wrapper {
-        left: 40%;
-        transform: translate(-50%, -60%);
-    }
-
-    .circle-text {
-        font-size: 16px;
-    }
-
-    .arrow-line {
-        height: 80px;
-    }
-
-    .arrow-head {
-        border-top: 16px solid white;
-    }
 }
 
 
@@ -254,6 +178,10 @@
 
         .wrapper {
             left: 40% !important;
+
+            .arrow {
+                display: none !important;
+            }
         }
     }
 
@@ -285,6 +213,4 @@
         }
 
     }
-
-
 }
