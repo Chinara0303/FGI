@@ -55,7 +55,7 @@
                     <div class="d-lg-none d-md-none d-block menu">
                         <div class="top-area">
                             <div class="logo">
-                                <img src="./assets/imgs/main-logo.svg" alt="Logo">
+                                <img src="./assets/imgs/main-logo.svg" alt="Logo" id="logo">
                             </div>
                             <div class="close-btn">
                                 <i class="fa-regular fa-circle-xmark fa-xl"></i>
@@ -99,14 +99,13 @@
                     </div>
                     <div class="wrapper">
                         <a href="#about">
-                            <svg width="110" height="110" viewBox="0 0 300 300" class="circle">
+                            <svg width="110" height="110" viewBox="0 0 300 300" class="circle" preserveAspectRatio="xMidYMid meet">
                                 <defs>
                                     <path id="circlePath"
-                                        d="M 150, 150 m -130, 0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" />
+                                          d="M 150, 150 m -130, 0 a 130,130 0 1,1 260,0 a 130,130 0 1,1 -260,0" />
                                 </defs>
                                 <text fill="#ffffff" class="circle-text">
-                                    <textPath href="#circlePath" font-size="38" startOffset="0%"
-                                        dominant-baseline="middle">
+                                    <textPath href="#circlePath" font-size="38" startOffset="0%" dominant-baseline="middle">
                                         More info More info More info More info More info
                                     </textPath>
                                 </text>
@@ -120,8 +119,8 @@
                                 </foreignObject>
                             </svg>
                         </a>
-
                     </div>
+                    
                 </div>
                 <a class="contact-btn" href="https://wa.me/994516898476" target="_blank">
                     <p>Contact us</p>
@@ -321,9 +320,9 @@
 <script>
     function adjustSliderHeight() {
         const slider = document.getElementById('slider');
-        const overlay = document.getElementById('overlay');
+        // const overlay = document.getElementById('overlay');
         slider.style.height = window.innerHeight + 'px';
-        overlay.style.height = window.innerHeight + 'px';
+        // overlay.style.height = window.innerHeight + 'px';
     }
     adjustSliderHeight();
 

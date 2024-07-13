@@ -30,15 +30,16 @@ window.addEventListener('scroll', function () {
         header.classList.remove('active-header')
     }
 })
+
 window.addEventListener('scroll', function () {
     const logo = document.getElementById('logo');
 
     if (window.scrollY >= 100) {
         header.classList.add('active-header');
-        logo.src = './assets/imgs/logo.svg';
+        logo.setAttribute("src", "./assets/imgs/logo.svg");
     } else {
         header.classList.remove('active-header');
-        logo.src = './assets/imgs/main-logo.svg';
+        logo.setAttribute("src", "./assets/imgs/main-logo.svg");
     }
 });
 
