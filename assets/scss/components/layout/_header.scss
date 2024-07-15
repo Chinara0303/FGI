@@ -18,7 +18,7 @@ header {
     }
 
     .logo {
-        width: 190.67px;
+        width: 150px;
         height: 55px;
 
         img {
@@ -228,14 +228,15 @@ header {
         height: auto !important;
     }
 }
+
 @media (min-width:768px) and (max-width:1024px) {
-   header{
-    ul{
-        li{
-            a{
-                font-size: $fs-2;
+    header {
+        ul {
+            li {
+                a {
+                    font-size: $fs-2;
+                }
             }
         }
     }
-   }
 }

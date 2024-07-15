@@ -31,17 +31,6 @@ window.addEventListener('scroll', function () {
     }
 })
 
-window.addEventListener('scroll', function () {
-    const logo = document.getElementById('logo');
-
-    if (window.scrollY >= 100) {
-        header.classList.add('active-header');
-        logo.setAttribute("src", "./assets/imgs/logo.svg");
-    } else {
-        header.classList.remove('active-header');
-        logo.setAttribute("src", "./assets/imgs/main-logo.svg");
-    }
-});
 
 overlay.addEventListener("click", function () {
     menu.classList.remove('active-menu')
