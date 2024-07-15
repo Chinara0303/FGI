@@ -79,9 +79,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        top: 70%;
-        left: 50%;
+   
 
         @keyframes rotate {
             0% {
@@ -153,9 +151,6 @@
             }
         }
 
-        .wrapper {
-            left: 40% !important;
-        }
 
     }
 
@@ -174,10 +169,6 @@
             }
         }
 
-        .wrapper {
-            top: 42% !important;
-            left: 47% !important;
-        }
 
         .socials-wrapper {
             .bottom-btn {
