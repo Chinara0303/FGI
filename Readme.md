@@ -24,22 +24,6 @@ Before you begin, ensure you have met the following requirements:
 
 <br>
 
-### ☑ Run 
-
-<br>
-
-🟢 To run **FGI** with your operating system, run this command:
-
-<br>
-
-⭐ Install requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-<br>
-
 
 ### ☑ Technologies used
 
