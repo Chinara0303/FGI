@@ -6,7 +6,7 @@
 
 <br>
 
-  <a href="https://github.com/Chinara0303/FGI"><strong> 📺 Live</strong></a> 
+  <a href="https://chinara0303.github.io/FGI/"><strong> 📺 Live</strong></a> 
 
 </div>
 
